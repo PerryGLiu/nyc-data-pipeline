@@ -1,0 +1,9 @@
+mta_api:
+  base_url: "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/"
+  feeds:
+    - id: "nyct%2Fgtfs"
+      name: "subway"
+    - id: "nyct%2Fgtfs-bdfm"
+      name: "bdfm"
+  api_key: "${MTA_API_KEY}"  # Will be loaded from environment
+  update_frequency: 300  # seconds
